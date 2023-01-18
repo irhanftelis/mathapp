@@ -7,8 +7,12 @@ with st.sidebar:
     default_index=0)
 
 if (mainmenu == "Home"):
-    st.write("# INI HALAMAN UTAMA")
-
+    st.markdown("<h1 style='text-align: center; black: red;'>WELCOME TO HANBOTZ</h1>", unsafe_allow_html=True)
+    st.markdown("""Hello selamat datang di website resmi mrsamak. 
+    Web ini menyediakan layanan mathapp atau biasa di sebut kalkulator
+    untuk menghitung operasi luas dari beberapa bidang. Yaitu salah satunya: <p>-menghuitung luas segitiga</p>
+    """, unsafe_allow_html=True)
+    st.markdown("Silahkan klik menu dipojok kiri atas untuk mulai menghitung. Terimakasih.")
 
 if (mainmenu == "Luas Segitiga"):
     st.write("""
