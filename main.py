@@ -46,4 +46,4 @@ if (mainmenu == "Bot Wa"):
     <p>Hallo kak, Dibawah ini adalah nomer bot wa saya.</p>
     <p>Silahkan gunakan dengan bijak</p>
     <p>Whatsapp : 082120786130</p>
-    """)
+    """, unsafe_allow_html=True)
