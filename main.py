@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu as menu
 
 with st.sidebar:
-    mainmenu = menu("MR SAMAK", ["Home", "Luas Persegi", "Luas Segitiga"],
+    mainmenu = menu("MR SAMAK", ["Home", "Luas Persegi", "Luas Segitiga", "Bot Wa"],
     icons=['house'], 
     default_index=0)
 
@@ -10,7 +10,7 @@ if (mainmenu == "Home"):
     st.markdown("<h1 style='text-align: center; black: red;'>WELCOME TO HANBOTZ</h1>", unsafe_allow_html=True)
     st.markdown("""Hello selamat datang di website resmi mrsamak. 
     <p>Web ini menyediakan layanan mathapp atau biasa di sebut kalkulator
-    untuk menghitung operasi luas dari beberapa bidang. Yaitu salah satunya: <p>-menghuitung luas segitiga</p>
+    untuk menghitung operasi luas dari beberapa bidang. Yaitu salah satunya: <p>-menghitung luas segitiga</p>
     """, unsafe_allow_html=True)
     st.markdown("Silahkan klik menu dipojok kiri atas untuk mulai menghitung. Terimakasih.")
 
@@ -40,3 +40,10 @@ if (mainmenu == "Luas Persegi"):
     if tombolhitung:
         luas = sisi * sisi
         st.success(f"Luas Persegi tersebut adalah {luas}")
+       
+if (mainmenu == "Bot Wa"):
+    st.write("""
+    <p>Hallo kak, Dibawah ini adalah nomer bot wa saya.</p>
+    <p>Silahkan gunakan dengan bijak</p>
+    <p>Whatsapp : 082120786130</p>
+    """)
